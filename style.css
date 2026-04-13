@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.selects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.resultado-box {
+    padding: 12px;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.formula-box {
+    padding: 10px;
+    border-radius: 10px;
+    background: #eef2ff;
+    font-size: 14px;
+}
+
+#historico-box {
+    display: none;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#historico div {
+    font-size: 14px;
+    padding: 4px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 🌙 Modo escuro geral */
+.dark {
+    background: #121212;
+}
+
+/* Container escuro */
+.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Inputs e selects */
+.dark input,
+.dark select {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Resultado */
+.dark .resultado-box {
+    background: #2a2a2a;
+}
+
+/* Fórmula */
+.dark .formula-box {
+    background: #2a2a2a;
+}
+
+/* Histórico */
+.dark #historico-box {
+    background: #2a2a2a;
+}
+
+/* Botão */
+.dark button {
+    background: #333;
+}
+
+.dark button:hover {
+    background: #555;
+}

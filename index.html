@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🌡️ Conversor de Temperatura</h1>
+
+        <button onclick="toggleDarkMode()" id="darkBtn">🌙 Modo Escuro</button>
+
+        <input type="number" id="valor" placeholder="Digite a temperatura">
+
+        <div class="selects">
+            <select id="de">
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+                <option value="k">Kelvin (K)</option>
+            </select>
+
+            <span>→</span>
+
+            <select id="para">
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+                <option value="k">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <button onclick="inverter()">🔄 Inverter</button>
+
+        <div class="resultado-box">
+            <p id="resultado">Resultado aparecerá aqui</p>
+        </div>
+
+        <div class="formula-box">
+            <p id="formula">A fórmula aparecerá aqui</p>
+        </div>
+
+        <button onclick="toggleHistorico()">📊 Ver Histórico</button>
+
+        <div id="historico-box">
+            <h3>Histórico</h3>
+            <div id="historico"></div>
+            <button onclick="limparHistorico()">❌ Limpar Histórico</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
